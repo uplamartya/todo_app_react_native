@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet ,TextInput, Button} from "react-native";
 import * as Components from "./Components/index";
 import {connect} from "react-redux";
 import * as ActionTypes from " ./store/actionTypes"
@@ -13,8 +13,8 @@ const Welcome = (props) => {
     <View style={styles.container}>
       <Text>Welcome { props.user.username}</Text>
 
-      <Components.Input  onChangeText = {(text) => setName (text)} placeholder="what should we call you"/>
-      <Components.Button onPress = {() => handlerInput()} text="Enter"/>
+      <TextInput  onChangeText = {(text) => setName (text)} placeholder="what should we call you"/>
+      <Button onPress = {() => handlerInput()} text="Enter"/>
 
     </View>
   );

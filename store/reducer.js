@@ -1,4 +1,6 @@
-import * as ActionTypes from './actionTypes'
+//import * as ActionTypes from './actionTypes'
+import {ADD_USER} from './actionTypes'
+import { ADD_USER } from './store';
 const initialState={
     user:{
         username:"Test",
